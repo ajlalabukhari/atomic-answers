@@ -1,3 +1,5 @@
+# STEP 4
+
 from pathlib import Path
 import os
 import json
@@ -10,8 +12,8 @@ load_dotenv()
 client = OpenAI()
 
 # === Files ===
-INPUT_FILE = Path("../data/chunks_langchain.jsonl")
-OUTPUT_FILE = Path("../data/embeddings_openai.jsonl")
+INPUT_FILE = Path("data/chunks_langchain.jsonl")
+OUTPUT_FILE = Path("data/embeddings_openai.jsonl")
 
 # === OpenAI Model ===
 MODEL_NAME = "text-embedding-3-small"

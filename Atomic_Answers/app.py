@@ -1,9 +1,10 @@
 import streamlit as st
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_chroma import Chroma
+from langchain_openai import OpenAIEmbeddings
 from groq import Groq
 from dotenv import load_dotenv
 import os
+
 
 # === Load environment ===
 load_dotenv()

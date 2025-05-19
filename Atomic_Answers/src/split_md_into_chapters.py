@@ -1,3 +1,5 @@
+# STEP 2
+
 import re
 from pathlib import Path
 import re
@@ -81,7 +83,7 @@ def split_into_chapters(md_path: str, output_dir: str):
         final_text = content[matches[-1].end():].strip()
         if final_text:
             additional_text = clean_markdown(final_text)
-            extra_path = Path("../data/additional_data.md")
+            extra_path = Path("data/additional_data.md")
             extra_path.write_text("# Additional Content\n\n" + additional_text, encoding="utf-8")
             print("✅ Saved additional content to additional_data.md")
 
@@ -90,6 +92,6 @@ def split_into_chapters(md_path: str, output_dir: str):
 
 if __name__ == "__main__":
     split_into_chapters(
-        md_path="../data/atomic_habits_full.md",
-        output_dir="../data/chapters"
+        md_path="data/atomic_habits_full.md",
+        output_dir="data/chapters"
     )

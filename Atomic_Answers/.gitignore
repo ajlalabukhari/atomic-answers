@@ -1,0 +1,10 @@
+# Ignore Python junk
+__pycache__/
+*.pyc
+
+# Ignore sensitive files
+.env
+
+# Ignore generated data
+chroma/
+data/*.jsonl

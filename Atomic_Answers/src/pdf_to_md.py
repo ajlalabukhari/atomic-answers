@@ -1,3 +1,5 @@
+# STEP 1
+
 from pathlib import Path
 from pypdf import PdfReader
 
@@ -11,8 +13,9 @@ def extract_pdf_text(pdf_path: str) -> str:
     return text
 
 if __name__ == "__main__":
-    pdf_path = Path("../data/AtomicHabits.pdf")
-    output_path = Path("../data/atomic_habits_full.md")
+    pdf_path = Path("data/AtomicHabits.pdf")
+    output_path = Path("data/atomic_habits_full.md")
+
 
     text = extract_pdf_text(str(pdf_path))
     output_path.write_text(text, encoding="utf-8")

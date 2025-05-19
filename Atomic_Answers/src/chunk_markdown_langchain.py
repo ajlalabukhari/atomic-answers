@@ -1,11 +1,13 @@
+# STEP 3
+
 from pathlib import Path
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import json
 
 # === CONFIG ===
-INPUT_DIR = Path("../data/chapters")
-EXTRA_FILE = Path("../data/additional_data.md")
-OUTPUT_FILE = Path("../data/chunks_langchain.jsonl")
+INPUT_DIR = Path("data/chapters")
+EXTRA_FILE = Path("data/additional_data.md")
+OUTPUT_FILE = Path("data/chunks_langchain.jsonl")
 
 # === CHUNKING STRATEGY ===
 # Explanation:
